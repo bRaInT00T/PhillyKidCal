@@ -1,0 +1,10 @@
+pandas
+requests
+openpyxl
+pytest
+
+# Philly Family ics File
+ics
+
+# Mommy Poppins
+BeautifulSoup4
