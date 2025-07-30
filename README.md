@@ -1,5 +1,7 @@
 # 🎡 PhillyKidCal
 
+<img src="img/thumbnail.jpg"  style="border-radius:10px">
+
 Combines family-friendly events from Philly-based calendars into one easy-to-use CSV and Excel schedule.
 
 [![Python Version](https://img.shields.io/badge/python-3.13.1%2B-blue.svg)](https://www.python.org/)
@@ -28,18 +30,19 @@ This project aggregates family-friendly events in the Philadelphia area by scrap
 ## 🗂 Project Structure
 
 ```bash
-kids_philly_events/
-├── data/                          # Output files
-│   ├── 2025_07_macaroni_kid.csv
-│   ├── 2025_07_mommy_poppins.csv
-│   ├── 2025_07_philly_family.csv
-│   ├── 2025_07_kids_events.csv
-│   └── 2025_07_kids_events.xlsx
-├── macaroni_kid.py               # Fetch events from Macaroni Kid API
-├── mommy_poppins.py              # Scrape events from Mommy Poppins
-├── philly_fam.py                 # Parse iCalendar feed from Philly Family
-├── main.py                       # Run all scrapers and join results
-└── README.md                     # Project documentation
+├── data                              # Output files
+├── LICENSE
+├── main.py                           # Run all scrapers and join results
+├── README.md                         # Project documentation
+├── requirements.txt
+├── scrapers
+│   ├── macaroni_kid.py               # Fetch events from Macaroni Kid API 
+│   ├── mommy_poppins.py              # Scrape events from Mommy Poppins 
+│   └── philly_fam.py                 # Parse iCalendar feed from Philly Family 
+└── tests
+    ├── test_macaroni_kid.py
+    ├── test_mommy_poppins.py
+    └── test_philly_fam.py
 ```
 
 ## ▶️ How to Run
@@ -63,22 +66,24 @@ python main.py
 - beautifulsoup4
 - openpyxl
 
-## 📅 Scheduling (Optional)
+## 📅 Scheduling
 
 You can schedule this to run daily/weekly using cron (Linux/macOS) or Task Scheduler (Windows).
 
 Example cron job to run at 8am every Monday:
 
 ```bash
-0 8 * * 1 /usr/bin/python3 /path/to/kids_philly_events/main.py
+0 8 * * 1 /usr/bin/python3 /path/to/PhillyKidCal/main.py
 ```
 
 ## 👤 Author
 
-Nicholas Wolk
+[Nicholas Wolk](https://www.nickwolk.com)
+
 Philadelphia, PA
-📧 [nwwolk@gmail.com](mailto:nwwolk@gmail.com)
-📎 [LinkedIn](https://www.linkedin.com/in/nicholaswolk)
+
+[![nwwolk@gmail.com](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nwwolk@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicholaswolk)
 
 ⸻
 
