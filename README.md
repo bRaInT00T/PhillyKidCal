@@ -1,17 +1,12 @@
 # 🎡 PhillyKidCal
 
-![PhillyKidCal](img/thumbnail.jpg)
-
-Combines family-friendly events from Philly-based calendars into one easy-to-use CSV and Excel schedule.
-
 [![Python Version](https://img.shields.io/badge/python-3.13.1%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Last Update](https://img.shields.io/badge/last%20update-July%202025-orange)](#)
 
-Scrapes family-friendly events in the Philadelphia area from **Macaroni Kid**, **Mommy Poppins**, and **Philly Family**. Outputs clean, deduplicated event lists in CSV and Excel formats.
+This project aggregates family-friendly events in the Philadelphia area from multiple data sources. Outputs clean, deduplicated event lists in CSV and Excel formats.
 
----
-This project aggregates family-friendly events in the Philadelphia area by scraping data from multiple sources and consolidating them into a single dataset in both CSV and Excel formats.
+![PhillyKidCal](img/thumbnail.jpg)
 
 ## 📚 Sources
 
