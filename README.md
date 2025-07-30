@@ -1,6 +1,6 @@
 # 🎡 PhillyKidCal
 
-<img src="img/thumbnail.jpg"  style="border-radius:10px">
+![PhillyKidCal](img/thumbnail.jpg)
 
 Combines family-friendly events from Philly-based calendars into one easy-to-use CSV and Excel schedule.
 
